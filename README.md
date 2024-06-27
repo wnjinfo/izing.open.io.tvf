@@ -36,8 +36,14 @@ ___
 
 ## Instalando
 Seguem links sugerimos:
--  [Como Instalar o IZING - Método 2023](https://www.youtube.com/watch?v=0j1v6m4Nk74&t=379s)
+-  [Como Instalar o IZING AAPANEL -  Video](https://www.youtube.com/watch?v=pw5KMtdVw0s)
+-  [Como Instalar o IZING - Video](https://youtu.be/-Woqu4W5Zzs?si=jcZYX3yPL60XkAd)
+-  [Como Instalar o IZING - Video opção 2](https://youtu.be/bZ-jXRtcGyc?si=B8oQxv0V0V36fgrF)
 
+-  [Como Instalar o IZING VPS - Texto - UBUNTU 20, 22](docs/INSTALL_VPS_UBUNTU_20_22.md)
+
+-  [Instalador automatico IZING LOCALHOST](https://github.com/cleitonme/izing.local)
+-  [Instalador automatico](https://github.com/cleitonme/izing.instalador)
 <br/>
 
 ## Atualizando
@@ -76,4 +82,14 @@ Você pode usar o izing em sua própria estrutura, desde que não seja para fins
 Você pode fazer um fork do projeto para realizar suas alterações, implementar os recursos desejados, mas deverá abrir o código para a comunidade, conforme previsto pela licença. 
 
 Uma vez que você deseje utilizar o izing para fins comerciais, todas as suas alterações, seu código fonte, precisa ser aberto (open source) para acesso pela comunidade, conforme licença. Bem como, deverá de forma clara, evidenciar aos seus usuários/clientes em menção de destaque ao projeto oficial (https://izing.io). Também é requerido a menção que você fornece uma versão alterada do izing e, em algum lugar do seu site, deverá fornecer o link para o repositório do seu projeto, permitindo que todos possam verificar as mudanças realizadas.
+
+## Recomendação de VPS boa e barata
+
+-  [Powerful cloud VPS & Web hosting.](https://control.peramix.com/?affid=58)
+
+## Consultoria particular
+
+Para quem gostaria de uma consultoria ou que eu faça instalação pode chamar no whatsapp (será cobrado por isso) 48 999416725
+
+-  [Versão baseada no izing com Painel SaaS e API Baileys](https://github.com/cleitonme/Whazing-SaaS)
 
