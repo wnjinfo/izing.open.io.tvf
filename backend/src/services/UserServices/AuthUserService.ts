@@ -1,4 +1,5 @@
 import User from "../../models/User";
+import Tenant from "../../models/Tenant"; 
 import AppError from "../../errors/AppError";
 import {
   createAccessToken,
@@ -33,6 +34,12 @@ const AuthUserService = async ({
 
   if (!(await user.checkPassword(password))) {
     throw new AppError("ERR_INVALID_CREDENTIALS", 401);
+  }
+
+  const tenant = await Tenant.findOne({ where: { id: user.tenantId } });
+
+  if (!tenant || tenant.status !== "active") {
+    throw new AppError("ERR_COMPANY_NOT_ACTIVE", 401);
   }
 
   const token = createAccessToken(user);
