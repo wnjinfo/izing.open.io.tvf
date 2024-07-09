@@ -1,24 +1,25 @@
 [![Grupo do WhatsApp](https://img.shields.io/badge/WhatsApp-Grupo%20IZING-brightgreen.svg)](https://chat.whatsapp.com/IIReEheixAx27ZbneHpskP)
 
+[Fork do projeto ldurans](https://github.com/ldurans/izing.open.io)
+
 # Izing
 
 Um sistema para gestão de atendimento multicanais centralizado.
 
+usuario normal: admin@izing.io senha: 123456
+
+Essa versão esta alguns bugs corrigidos e novos recursos:
+
+- Editar mensagens
+- Receber localização
+- Abas tela atendimento
+- Limite de usuarios e canais funcional
+- Suporte audio iphone
+- Erro sincronizar contatos
+- Outros ajustes para melhorar desempenho
+- Mudança sistema cache para melhor conexão
 
 **IMPORTANTE**: não garantimos que a utilização desta ferramenta não irá gerar bloqueio nas contas utilizadas. São bots que em sua maioria utilizam APIs secundarias para comunicação com os fornecedores dos serviços. Use com responsabilidade!
-
-<br/>
-
-## Screenshots
-
-![Doação](screenshots/Bot.gif)
-<br/>
-
-![Doação](screenshots/dashboard.gif)
-<br/>
-
-![Doação](screenshots/izing.gif)
-___
 
 <br/>
 
@@ -46,9 +47,12 @@ Seguem links sugerimos:
 -  [Instalador automatico](https://github.com/cleitonme/izing.instalador)
 <br/>
 
+
 ## Atualizando
 
-Izing é um trabalho em progresso e estamos frequentemente adicionando novas funcionalidades e correções de bugs.
+Tem script "update-izing" para facilitar atualização ele somente funciona se tiver instalado pasta izing.io
+
+sh update-izing
 
 <br/>
 
@@ -62,26 +66,6 @@ Izing é um trabalho em progresso e estamos frequentemente adicionando novas fun
 A utilização desta ferramenta é feita por sua conta e risco. O código é aberto e todos podem contribuir.
 
 Este projeto não é afiliado, associado, autorizado, endossado por, ou de qualquer forma oficialmente ligado à WhatsApp, ou a qualquer uma das suas filiais ou afiliadas. O website oficial da WhatsApp pode ser encontrado em <https://whatsapp.com>. "WhatsApp", bem como nomes, marcas, emblemas e imagens relacionadas são marcas registadas dos seus respectivos proprietários.
-
---------------------------
-<br/>
-
-
-#### Curtiu? Apoie o projeto!! Com sua doação, será possível continuar com as atualizações. Segue QR code (PIX)  
-
-[<img src="donate.jpeg" height="150" width="200"/>](donate.jpeg)
-
---------------------------
-<br/>
-
-## **Licença e seus requerimentos**
-
-Izing é open-source, licenciado com base na licença GNU Affero General Public License Version 3 [(AGPLv3)](https://www.gnu.org/licenses/agpl-3.0.pt-br.html). O objetivo da licença AGPL é maximizar a liberdade do usuário e incentivar as empresas a contribuir com o código aberto.
-
-Você pode usar o izing em sua própria estrutura, desde que não seja para fins de comercialização.
-Você pode fazer um fork do projeto para realizar suas alterações, implementar os recursos desejados, mas deverá abrir o código para a comunidade, conforme previsto pela licença. 
-
-Uma vez que você deseje utilizar o izing para fins comerciais, todas as suas alterações, seu código fonte, precisa ser aberto (open source) para acesso pela comunidade, conforme licença. Bem como, deverá de forma clara, evidenciar aos seus usuários/clientes em menção de destaque ao projeto oficial (https://izing.io). Também é requerido a menção que você fornece uma versão alterada do izing e, em algum lugar do seu site, deverá fornecer o link para o repositório do seu projeto, permitindo que todos possam verificar as mudanças realizadas.
 
 ## Recomendação de VPS boa e barata
 
@@ -98,4 +82,3 @@ WHAZING
 Para quem gostaria de uma consultoria ou que eu faça instalação pode chamar no whatsapp (será cobrado por isso) 48 999416725
 
 -  [Versão baseada no izing com Painel SaaS e API Baileys](https://github.com/cleitonme/Whazing-SaaS)
-
