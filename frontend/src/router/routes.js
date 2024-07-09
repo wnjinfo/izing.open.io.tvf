@@ -3,12 +3,11 @@ const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
-    redirect: { name: 'contatos' },
+    redirect: { name: 'home' },
     children: [
-      { path: '', component: () => import('pages/contatos/Index.vue') },
+      { path: '', component: () => import('pages/dashboard/Index.vue') },
       { path: '/home', name: 'home-dashboard', component: () => import('pages/dashboard/Index.vue') },
       { path: '/painel-atendimentos', name: 'painel-atendimentos', component: () => import('pages/dashboard/DashTicketsFilas.vue') },
-      // { path: '/ConsultarTicketsQueuesService', name: 'dashboard', component: () => import('pages/dashboard/Index.vue') },
       { path: '/sessoes', name: 'sessoes', component: () => import('pages/sessaoWhatsapp/Index.vue') },
       { path: '/contatos', name: 'contatos', component: () => import('pages/contatos/Index.vue') },
       { path: '/usuarios', name: 'usuarios', component: () => import('pages/usuarios/Index.vue') },
