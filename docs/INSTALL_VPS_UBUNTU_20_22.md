@@ -548,6 +548,16 @@ docker container restart redis-izing
 
 Pronto sistema instalado so acessar frontend
 
+Usuário painel SaaS
+
+Usuário
+
+super@izing.io  
+
+Senha:
+
+123456
+
 Usuário padrão para acesso
 
 Usuário
@@ -567,7 +577,7 @@ Na pasta backend execute
 npm r whatsapp-web.js
 ```
 ```bash
-npm i whatsapp-web.js@^1.24.0
+npm i whatsapp-web.js@^1.25.0
 ```
 ```bash
 rm .wwebjs_auth -Rf

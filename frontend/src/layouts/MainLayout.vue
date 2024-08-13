@@ -36,6 +36,7 @@
         <q-space />
 
         <div class="q-gutter-sm row items-center no-wrap">
+        <div v-if="userProfile === 'admin' || userProfile === 'user'">
           <q-btn
             round
             dense
@@ -121,6 +122,7 @@
               {{ usuario.status === 'offline' ? 'Usuário Offiline' : 'Usuário Online' }}
             </q-tooltip>
           </q-avatar>
+          </div>
           <q-btn
             round
             flat
@@ -182,11 +184,9 @@
           padding
           :key="userProfile"
         >
-          <EssentialLink
-            v-for="item in menuData"
-            :key="item.title"
-            v-bind="item"
-          />
+          <div v-if="userProfile === 'admin' || userProfile === 'user'">
+          <EssentialLink v-for="item in menuData" :key="item.title" v-bind="item"/>
+          </div>
           <div v-if="userProfile === 'admin'">
             <q-separator spaced />
             <div class="q-mb-lg"></div>
@@ -196,6 +196,15 @@
                 :key="item.title"
                 v-bind="item"
               />
+            </template>
+          </div>
+          <div v-if="userProfile === 'super'">
+            <!-- <q-separator spaced /> -->
+            <div class="q-mb-lg"></div>
+            <template v-for="item in menuDataSuper">
+              <EssentialLink v-if="exibirMenuBeta(item)"
+                :key="item.title"
+                v-bind="item" />
             </template>
           </div>
 
@@ -230,7 +239,7 @@
         <router-view />
       </q-page>
     </q-page-container>
-    <audio ref="audioNotification">
+    <audio ref="audioNotification" v-if="userProfile === 'admin' || userProfile === 'user'">
       <source
         :src="alertSound"
         type="audio/mp3"
@@ -359,6 +368,27 @@ const objMenuAdmin = [
   }
 ]
 
+const superMenu = [
+  {
+    title: 'Empresas',
+    caption: 'Admin das Empresas',
+    icon: 'mdi-office-building',
+    routeName: 'empresassuper'
+  },
+  {
+    title: 'Usuarios',
+    caption: 'Admin de usuários',
+    icon: 'mdi-account-group',
+    routeName: 'usuariossuper'
+  },
+  {
+    title: 'Canais',
+    caption: 'Canais de Comunicação',
+    icon: 'mdi-cellphone-wireless',
+    routeName: 'sessaosuper'
+  }
+]
+
 export default {
   name: 'MainLayout',
   mixins: [socketInitial],
@@ -375,6 +405,7 @@ export default {
       leftDrawerOpen: false,
       menuData: objMenu,
       menuDataAdmin: objMenuAdmin,
+      menuDataSuper: superMenu,
       countTickets: 0,
       ticketsList: []
     }

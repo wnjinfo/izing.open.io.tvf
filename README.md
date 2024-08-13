@@ -2,22 +2,13 @@
 
 [Fork do projeto ldurans](https://github.com/ldurans/izing.open.io)
 
-# Izing
+# Izing com painel SaaS
 
 Um sistema para gestão de atendimento multicanais centralizado.
 
+usuario Painel SaaS: super@izing.io senha: 123456
+
 usuario normal: admin@izing.io senha: 123456
-
-Essa versão esta alguns bugs corrigidos e novos recursos:
-
-- Editar mensagens
-- Receber localização
-- Abas tela atendimento
-- Limite de usuarios e canais funcional
-- Suporte audio iphone
-- Erro sincronizar contatos
-- Outros ajustes para melhorar desempenho
-- Mudança sistema cache para melhor conexão
 
 **IMPORTANTE**: não garantimos que a utilização desta ferramenta não irá gerar bloqueio nas contas utilizadas. São bots que em sua maioria utilizam APIs secundarias para comunicação com os fornecedores dos serviços. Use com responsabilidade!
 
