@@ -6,14 +6,15 @@ import fs from "fs";
 import { Message as WbotMessage } from "whatsapp-web.js";
 import Contact from "../../../models/Contact";
 import Ticket from "../../../models/Ticket";
-import ffmpeg from "fluent-ffmpeg";
+
 
 import Message from "../../../models/Message";
 import VerifyQuotedMessage from "./VerifyQuotedMessage";
 import CreateMessageService from "../../MessageServices/CreateMessageService";
 import { logger } from "../../../utils/logger";
 
-ffmpeg.setFfmpegPath("/usr/bin/ffmpeg");
+import ffmpeg from "fluent-ffmpeg";
+import { path as ffmpegPath } from "@ffmpeg-installer/ffmpeg";
 
 const writeFileAsync = promisify(writeFile);
 
