@@ -59,6 +59,7 @@ const AdminCreateTenantService = async ({
     { key: 'botTicketActive', value: '3' },
     { key: 'ignoreGroupMsg', value: 'enabled' },
     { key: 'rejectCalls', value: 'disabled' },
+    { key: 'hubToken', value: 'disabled' },
     { key: 'callRejectMessage', value: 'As chamadas de voz e vídeo estão desabilitas para esse WhatsApp, favor enviar uma mensagem de texto.' }
   ];
 

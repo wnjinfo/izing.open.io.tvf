@@ -153,7 +153,7 @@ export default {
     contato: {
       name: { required, minLength: minLength(3), maxLength: maxLength(50) },
       email: { email },
-      number: { required, minLength: minLength(8) }
+      number: { minLength: minLength(8) }
     }
   },
   methods: {

@@ -22,6 +22,9 @@ import tenantRoutes from "./tenantRoutes";
 import WebHooksRoutes from "./WebHooksRoutes";
 import adminRoutes from "./adminRoutes";
 import facebookRoutes from "./facebookRoutes";
+import hubChannelRoutes from "./hubChannelRoutes";
+import hubMessageRoutes from "./hubMessageRoutes";
+import hubWebhookRoutes from "./hubWebhookRoutes";
 
 const routes = Router();
 
@@ -48,5 +51,8 @@ routes.use(tenantRoutes);
 routes.use(WebHooksRoutes);
 routes.use(adminRoutes);
 routes.use(facebookRoutes);
+routes.use(hubChannelRoutes)
+routes.use(hubMessageRoutes)
+routes.use(hubWebhookRoutes)
 
 export default routes;

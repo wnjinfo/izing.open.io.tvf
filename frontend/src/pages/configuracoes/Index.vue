@@ -171,6 +171,33 @@
           />
         </div>
       </div>
+
+      <div class="row q-px-md">
+        <q-item tag="label" class="col-8" v-ripple>
+          <q-item-section>
+            <q-item-label>Token NotificaME</q-item-label>
+          </q-item-section>
+          <q-tooltip content-class="bg-negative text-bold">
+            HUB Notificame (Beta)
+          </q-tooltip>
+        </q-item>
+
+        <div class="col-4">
+          <q-input
+            class="blur-effect"
+            v-model="hubToken"
+            type="textarea"
+            autogrow
+            dense
+            outlined
+            label="Seu Token Notificame"
+            input-style="min-height: 6vh;"
+            debounce="700"
+            @input="atualizarConfiguracao('hubToken')"
+          />
+        </div>
+       </div>
+
     </q-list>
   </div>
 </template>
@@ -190,7 +217,8 @@ export default {
       botTicketActive: null,
       ignoreGroupMsg: null,
       rejectCalls: null,
-      callRejectMessage: ''
+      callRejectMessage: '',
+      hubToken: ''
     }
   },
   methods: {

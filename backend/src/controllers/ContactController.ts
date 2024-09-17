@@ -60,9 +60,9 @@ export const store = async (req: Request, res: Response): Promise<Response> => {
 
   const schema = Yup.object().shape({
     name: Yup.string().required(),
-    number: Yup.string()
-      .required()
-      .matches(/^\d+$/, "Invalid number format. Only numbers is allowed.")
+    // number: Yup.string()
+    //   .required()
+    //   .matches(/^\d+$/, "Invalid number format. Only numbers is allowed.")
   });
 
   try {
@@ -103,10 +103,10 @@ export const update = async (
 
   const schema = Yup.object().shape({
     name: Yup.string(),
-    number: Yup.string().matches(
-      /^\d+$/,
-      "Invalid number format. Only numbers is allowed."
-    )
+    // number: Yup.string().matches(
+    //   /^\d+$/,
+    //   "Invalid number format. Only numbers is allowed."
+    // )
   });
 
   try {
@@ -115,17 +115,29 @@ export const update = async (
     throw new AppError(err.message);
   }
 
-  const waNumber = await CheckIsValidContact(contactData.number, tenantId);
-
-  contactData.number = waNumber.user;
+  let waNumber
+  let contact
 
   const { contactId } = req.params;
 
-  const contact = await UpdateContactService({
-    contactData,
-    contactId,
-    tenantId
-  });
+  console.log(contactData.number)
+  if(contactData.number !== 'null' && contactData.number !== ''){
+    waNumber = await CheckIsValidContact(contactData.number, tenantId);
+
+    contactData.number = waNumber.user;
+    contact = await UpdateContactService({
+      contactData,
+      contactId,
+      tenantId
+    });
+
+  } else {
+    contact = await UpdateContactService({
+      contactData,
+      contactId,
+      tenantId
+    });
+  }
 
   return res.status(200).json(contact);
 };

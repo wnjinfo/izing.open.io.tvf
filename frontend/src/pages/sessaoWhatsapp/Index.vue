@@ -65,6 +65,7 @@
           </q-card-section>
           <q-card-section>
             <q-select
+              v-if="!item.type.includes('hub')"
               outlined
               dense
               rounded
@@ -134,7 +135,7 @@
               </div>
 
               <q-btn
-                v-if="['OPENING', 'CONNECTED', 'PAIRING', 'TIMEOUT'].includes(item.status)"
+                v-if="['OPENING', 'CONNECTED', 'PAIRING', 'TIMEOUT'].includes(item.status) && !item.type.includes('hub')"
                 color="negative"
                 label="Desconectar"
                 @click="handleDisconectWhatsSession(item.id)"
