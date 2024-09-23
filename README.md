@@ -72,7 +72,7 @@ WHAZING
 
 #### Curtiu? Apoie o projeto!! Com sua doação, será possível continuar com as atualizações. Segue QR code (PIX)  
 
-[<img src="donate.jpg" height="180" width="160"/>](donate.jpg)
+[<img src="donate.jpg" height="160" width="180"/>](donate.jpg)
 
 ## Consultoria particular
 
