@@ -70,6 +70,10 @@ Este projeto não é afiliado, associado, autorizado, endossado por, ou de qualq
 WHAZING
 ```
 
+#### Curtiu? Apoie o projeto!! Com sua doação, será possível continuar com as atualizações. Segue QR code (PIX)  
+
+[<img src="donate.jpg" height="150" width="200"/>](donate.jpg)
+
 ## Consultoria particular
 
 Para quem gostaria de uma consultoria ou que eu faça instalação pode chamar no whatsapp (será cobrado por isso) 48 999416725
