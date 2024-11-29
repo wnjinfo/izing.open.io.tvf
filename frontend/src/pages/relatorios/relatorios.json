@@ -18,5 +18,10 @@
       "name": "estatisticas-atendimentos-usuarios",
       "titulo": "Resumo Atendimentos Usuários",
       "objetivo": "Apresenta o resumo dos atendimentos por usuários."
+    },
+    {
+      "name": "relatorio-tickets",
+      "titulo": "Relatório dos tickets",
+      "objetivo": "Apresenta relatorios de tickets com varias filtragem."
     }
   ]

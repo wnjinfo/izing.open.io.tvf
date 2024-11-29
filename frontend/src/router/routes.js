@@ -63,6 +63,11 @@ const routes = [
         path: 'contatos-por-estado',
         name: 'contatos-por-estado',
         component: () => import('pages/relatorios/RelatorioContatosEstado')
+      },
+      {
+        path: 'relatorio-tickets',
+        name: 'relatorio-tickets',
+        component: () => import('pages/relatorios/RelatorioTickets')
       }
     ]
   },
