@@ -577,25 +577,7 @@ Na pasta backend execute
 npm r whatsapp-web.js
 ```
 ```bash
-npm i whatsapp-web.js@^1.26.0
-```
-```bash
-rm .wwebjs_auth -Rf
-```
-```bash
-rm .wwebjs_cache -Rf
-```
-```bash
-pm2 restart all
-```
-
-2. Versão EXODUS
-Na pasta backend execute
-```bash
-npm r whatsapp-web.js
-```
-```bash
-npm install github:pedroslopez/whatsapp-web.js#webpack-exodus
+npm install github:pedroslopez/whatsapp-web.js
 ```
 ```bash
 rm .wwebjs_auth -Rf
