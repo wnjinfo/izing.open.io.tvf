@@ -175,7 +175,7 @@
       <div class="row q-px-md">
         <q-item tag="label" class="col-8" v-ripple>
           <q-item-section>
-            <q-item-label>Token NotificaME</q-item-label>
+            <q-item-label>Token NotificaME - Adquira com desconto no (48) 99941-6725</q-item-label>
           </q-item-section>
           <q-tooltip content-class="bg-negative text-bold">
             HUB Notificame (Beta)
