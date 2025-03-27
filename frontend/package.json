@@ -8,8 +8,9 @@
   "license": "AGPL-3.0-or-later",
   "github": "https://github.com/cleitonme/izing.open.io",
   "scripts": {
-    "lint": "eslint --ext .js,.vue ./",
-    "test": "echo \"No test specified\" && exit 0"
+    "start": "pm2 start server.js --name izing-frontend",
+    "stop": "pm2 stop server.js --name izing-frontend",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && npx quasar build -P -m pwa"
   },
   "dependencies": {
     "@quasar/cli": "^2.4.0",
@@ -40,7 +41,7 @@
     "vuedraggable": "^2.24.3",
     "vuelidate": "^0.7.7",
     "vuelidate-error-extractor": "^2.4.1",
-    "xlsx": "^0.16.9"
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz"
   },
   "devDependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.21.0",
@@ -56,11 +57,6 @@
     "eslint-plugin-vue": "^6.1.2",
     "quasar-app-extension-qdatetimepicker": "^1.0.0-rc.18",
     "workbox-webpack-plugin": "^6.6.0"
-  },
-  "scripts": {
-    "start": "pm2 start server.js --name izing-frontend",
-    "stop": "pm2 stop server.js --name izing-frontend",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider && npx quasar build -P -m pwa"
   },
   "browserslist": [
     "last 10 Chrome versions",
