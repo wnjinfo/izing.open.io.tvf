@@ -32,7 +32,8 @@ export const store = async (req: Request, res: Response): Promise<Response> => {
         isDefault: whatsapp.isDefault,
         tenantId: whatsapp.tenantId,
         type: whatsapp.type,
-        phone: whatsapp.phone
+        phone: whatsapp.phone,
+        number: whatsapp.number
       };
       setChannelWebhook(whatsappChannel, whatsapp.id.toString());
     }, 2000);
