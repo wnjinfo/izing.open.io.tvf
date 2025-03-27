@@ -8,6 +8,12 @@ Preço especial por canal NotificaMe chamar whatsapp (48) 99941-6725
 
 https://wavoip.com/
 
+- Cupom 50% desconto wavoip
+
+```bash
+50OFF
+```
+
 Um sistema para gestão de atendimento multicanais centralizado.
 
 usuario Painel SaaS: super@izing.io senha: 123456
