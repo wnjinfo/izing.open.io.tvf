@@ -38,7 +38,6 @@ export const store = async (req: Request, res: Response): Promise<Response> => {
     }, 2000);
   });
 
-  console.log('3')
   const io = getIO();
 
   whatsapps.forEach(whatsapp => {
