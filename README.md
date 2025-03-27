@@ -2,9 +2,11 @@
 
 [Fork do projeto ldurans](https://github.com/ldurans/izing.open.io)
 
-# Izing com painel SaaS - Hub NotificaMe(facebook e instagram) 
+# Izing com painel SaaS - Hub NotificaMe(facebook e instagram) - Wavoip
 
 Preço especial por canal NotificaMe chamar whatsapp (48) 99941-6725
+
+https://wavoip.com/
 
 Um sistema para gestão de atendimento multicanais centralizado.
 
