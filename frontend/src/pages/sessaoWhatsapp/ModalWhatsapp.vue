@@ -223,6 +223,11 @@
             </div>
           </div>
         </div>
+        <div class="col-12" v-if="whatsapp.type === 'whatsapp'">
+          <c-input outlined
+                   label="Wavoip chamadas whatsapp"
+                   v-model="whatsapp.wavoip"/>
+        </div>
       </q-card-section>
       <q-card-actions
         align="center"

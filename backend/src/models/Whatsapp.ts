@@ -155,6 +155,11 @@ class Whatsapp extends Model<Whatsapp> {
   @Column(DataType.TEXT)
   farewellMessage: string;
 
+  @Default(null)
+  @AllowNull
+  @Column(DataType.STRING)
+  wavoip: string;
+
   @Column(DataType.VIRTUAL)
   get UrlWabaWebHook(): string | null {
     const key = this.getDataValue("tokenHook");
