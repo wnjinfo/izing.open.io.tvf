@@ -8,7 +8,7 @@ Preço especial por canal NotificaMe chamar whatsapp (48) 99941-6725
 
 https://wavoip.com/
 
-- Cupom 50% desconto wavoip
+- Cupom 50% desconto Wavoip
 
 ```bash
 50OFF
