@@ -409,7 +409,10 @@ import { VEmojiPicker } from 'v-emoji-picker'
 import { mapGetters } from 'vuex'
 import RecordingTimer from './RecordingTimer'
 import MicRecorder from 'mic-recorder-to-mp3'
-const Mp3Recorder = new MicRecorder({ bitRate: 128 })
+const Mp3Recorder = new MicRecorder({
+  bitRate: 128,
+  encodeAfterRecord: true
+})
 import mixinAtualizarStatusTicket from './mixinAtualizarStatusTicket'
 
 export default {
@@ -530,6 +533,7 @@ export default {
       }
     },
     async handleStopRecordingAudio () {
+      const ticketId = this.ticketFocado.id
       this.loading = true
       try {
         const [, blob] = await Mp3Recorder.stop().getMp3()
@@ -548,7 +552,6 @@ export default {
         if (this.isScheduleDate) {
           formData.append('scheduleDate', this.scheduleDate)
         }
-        const ticketId = this.ticketFocado.id
         // await EnviarMensagemTexto(ticketId, formData)
         if (this.ticketFocado.channel.includes('hub')) {
           await EnviarMensagemHub(ticketId, formData)
