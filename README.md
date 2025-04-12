@@ -11,7 +11,7 @@ https://wavoip.com/
 - Cupom 50% desconto Wavoip
 
 ```bash
-50OFF
+whazing
 ```
 
 Um sistema para gestão de atendimento multicanais centralizado.
