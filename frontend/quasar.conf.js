@@ -127,8 +127,8 @@ module.exports = function (ctx) {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {maximumFileSizeToCacheInBytes: 5000000,}, // only for GenerateSW
       manifest: {
-        name: 'IZING',
-        short_name: 'IZING',
+        name: 'TVF',
+        short_name: 'TVF',
         description: 'Bot Multi-atendimento para whatsapp',
         display: 'standalone',
         orientation: 'portrait',
@@ -193,7 +193,7 @@ module.exports = function (ctx) {
 
       builder: {
         // https://www.electron.build/configuration/configuration
-        appId: 'IZING'
+        appId: 'TVF'
       },
 
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
